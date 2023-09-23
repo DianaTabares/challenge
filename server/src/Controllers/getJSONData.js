@@ -3,7 +3,7 @@ const path = require("path");
 
 function getJSONData(req, res) {
   try {
-    const jsonFilePath = path.join(__dirname, "ruta_al_archivo.json");
+    const jsonFilePath = path.join(__dirname, "../datos.json");
     const jsonData = JSON.parse(fs.readFileSync(jsonFilePath, "utf-8"));
 
     res.json(jsonData);
