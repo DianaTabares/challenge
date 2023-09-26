@@ -1,6 +1,6 @@
 const { conn } = require("./src/DB");
 const server = require("./src/server");
-const PORT = 3000;
+const PORT = 3001;
 
 conn.sync().then(() => {
   server.listen(PORT, async () => {
